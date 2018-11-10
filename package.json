@@ -1,0 +1,43 @@
+{
+  "name": "redux-funk",
+  "version": "0.1.0",
+  "description": "Just like redux-thunk, only funky!",
+  "main": "build/index.js",
+  "scripts": {
+    "dev:watch": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambrossy/redux-funk.git"
+  },
+  "author": "Lambros Symeonakis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lambrossy/redux-funk/issues"
+  },
+  "homepage": "https://github.com/lambrossy/redux-funk#readme",
+  "keywords": [
+    "redux",
+    "thunk",
+    "middleware",
+    "redux-middleware",
+    "flux"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^23.6.0",
+    "np": "^3.0.4",
+    "watch": "^1.0.2"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  }
+}
